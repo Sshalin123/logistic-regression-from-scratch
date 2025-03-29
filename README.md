@@ -21,3 +21,19 @@ The LogisticRegression model from scikit-learn is created and trained using the 
 Finally, the training accuracy is computed and printed.
 
 
+# when building from scrtch(for goated ppl only)
+
+### Data Loading and Preprocessing:
+first load the Iris dataset directly from its URL and name the columns.
+The dataset is filtered to only include two classes ("Iris-setosa" and "Iris-versicolor"), and only two features (sepal length and sepal width) are selected.
+Class labels are converted to binary (0 or 1).
+Features are normalized to have zero mean and unit variance.
+### Logistic Regression Implementation:
+The class LogisticRegressionScratch implements the logistic regression model using gradient descent.
+The sigmoid function computes the probability estimate.
+The fit method performs gradient descent updates and tracks the loss (binary cross-entropy) at each iteration.
+The predict_prob and predict methods compute probability estimates and binary predictions, respectively.
+### Training and Visualization:
+The model is trained for 1000 iterations with a learning rate of 0.1.
+Training accuracy is printed, and the loss over iterations is plotted to show convergence.
+
